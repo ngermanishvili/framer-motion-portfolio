@@ -18,7 +18,8 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+
+const disciplines = ['REACT.JS', 'NEXT.JS', 'JAVASCRIPT', 'NODE.JS', 'TAILWINDCSS', 'SASS', 'BOOTSTRAP', 'MATERIALUI', 'CHAKRAUI', 'MONGODB', 'FIREBASE'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -138,12 +139,12 @@ export const Home = () => {
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTexture ],
-              placeholder: gamestackTexture ,
+              srcSet: [gamestackTexture, gamestackTexture],
+              placeholder: gamestackTexture,
             },
             {
-              srcSet: [gamestackTexture , gamestackTexture ],
-              placeholder: gamestackTexture ,
+              srcSet: [gamestackTexture, gamestackTexture],
+              placeholder: gamestackTexture,
             },
           ],
         }}
