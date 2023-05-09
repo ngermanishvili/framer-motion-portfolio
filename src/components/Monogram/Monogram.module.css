@@ -3,6 +3,11 @@
   transition: fill var(--durationL) ease;
 }
 
+.monoh1 {
+  margin-left: 10rem;
+  color: var(--colorTextTitle);
+}
+
 .highlight {
   fill: rgb(var(--rgbAccent));
   opacity: 0;
