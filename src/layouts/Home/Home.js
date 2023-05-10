@@ -5,9 +5,11 @@ import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from 'assets/capture.png';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
+import summarizerDesk from 'assets/summarizer-desk.jpg';
+import summarizerMobile from 'assets/summarizer-portfolio-mobile.png';
+import ecommerceDesk from 'assets/ecommerce.png'
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/onyx.jpg';
 import { Footer } from 'components/Footer';
@@ -28,7 +30,12 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
+  const projectFive = useRef();
+  const projectSix = useRef();
+  const projectSeven = useRef();
   const details = useRef();
+  
 
   useEffect(() => {
     const sections = [intro, projectOne, projectTwo, projectThree, details];
@@ -87,7 +94,7 @@ export const Home = () => {
         title="Onyx Elite: Elevate Your Performance"
         description="Elevate your fitness performance to elite status with Onyx. Our exclusive training program is designed for athletes, fitness enthusiasts, and anyone seeking top-tier results. Unleash your competitive edge and rise to the pinnacle of your physical capabilities."
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="https://gamestack.hamishw.com"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -102,34 +109,76 @@ export const Home = () => {
 
       <ProjectSummary
         id="project-2"
-        alternate
         sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
+        visible={visibleSections.includes(projectOne.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="CHAGPT AI Summarizer: Summarize with Ease"
+        description="This web application is powered by the revolutionary OpenAI GPT-4 artificial intelligence system, which employs state-of-the-art language processing and machine learning techniques to provide the most accurate and insightful article summaries possible. Its cutting-edge capabilities enable it to accurately capture the essence of any article, regardless of complexity or subject matter, and present it in a clear and concise manner. To ensure the best possible experience for users, we recommend testing this application on reputable article sites like medium.com, where the quality and diversity of content is sure to put our AI to the test!"
+        buttonText="View Project"
+        buttonLink="https://ai-summarize1337.netlify.app/"
         model={{
-          type: 'phone',
-          alt: 'App login screen',
+          type: 'laptop',
+          alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
+              srcSet: [summarizerDesk, summarizerDesk],
+              placeholder: summarizerDesk,
             },
+          ],
+        }}
+      />
+
+      <ProjectSummary
+        id="project-3"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectOne.current)}
+        index={3}
+        title="Onyx Elite: Elevate Your Performance"
+        description="Elevate your fitness performance to elite status with Onyx. Our exclusive training program is designed for athletes, fitness enthusiasts, and anyone seeking top-tier results. Unleash your competitive edge and rise to the pinnacle of your physical capabilities."
+        buttonText="View project"
+        buttonLink="/projects/slice"      
+
+        model={{
+          type: 'laptop',
+          alt: 'Smart Sparrow lesson builder',
+          textures: [
             {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: [ecommerceDesk, ecommerceDesk],
+              placeholder: ecommerceDesk,
             },
           ],
         }}
       />
       <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
+        id="project-4"
+        alternate
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={4}
+        title="CHAGPT AI Summarizer: Summarize with Ease (Mobile)"
+        description="Openai Summarizer Mobile App"
+        buttonText="View website"
+        buttonLink="https://ai-summarize1337.netlify.app/"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [summarizerMobile, summarizerMobile],
+              placeholder: summarizerMobile,
+            },
+            {
+              srcSet: [summarizerMobile, summarizerMobile],
+              placeholder: summarizerMobile,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-5"
+        sectionRef={projectFive}
         visible={visibleSections.includes(projectThree.current)}
-        index={2}
+        index={5}
         title="Biomedical image collaboration"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
 
@@ -151,11 +200,11 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-2"
+        id="project-6"
         alternate
-        sectionRef={projectTwo}
+        sectionRef={projectSix}
         visible={visibleSections.includes(projectTwo.current)}
-        index={2}
+        index={6}
         title="Video game progress tracking"
         description="Design and development for a video game tracking app built in React Native"
         buttonText="View website"
@@ -176,10 +225,10 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
+        id="project-7"
+        sectionRef={projectSeven}
         visible={visibleSections.includes(projectThree.current)}
-        index={3}
+        index={7}
         title="Biomedical image collaboration"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
         buttonText="View project"
