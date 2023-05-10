@@ -44,7 +44,7 @@ const title = 'Biomedical image collaboration';
 const description =
   'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
 const roles = ['User Research', 'UX Design', 'Interface Design'];
- //
+ // asd
 export const Slice = () => {
   return (
     <Fragment>
