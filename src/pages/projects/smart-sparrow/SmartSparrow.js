@@ -78,6 +78,7 @@ const roles = [
   'UX and UI Design',
   'GSAP ANIMATIONS',
   'RESPONSIVE DESIGN',
+
 ];
 
 export const SmartSparrow = () => {
@@ -181,10 +182,8 @@ export const SmartSparrow = () => {
                 <ProjectTextRow width="s">
                   <ProjectSectionHeading>Nika Germanishvili</ProjectSectionHeading>
                   <ProjectSectionText>
-                    Animation was a core principle in making the authoring experience a
-                    more understandable process. Elements animate in ways that indicate
-                    the cause and effect of each interaction to improve the fluidity of
-                    the overall experience.
+                    This cutting-edge project is built using JavaScript, a versatile and powerful programming language that enables dynamic and interactive features. Nika's expertise in JavaScript shines through in the seamless functionality and responsiveness of the platform, ensuring a user-friendly experience for members of Onyx Fitness.
+                    Adding an extra layer of visual appeal, Nika has skillfully incorporated GSAP animations into the project. GSAP (GreenSock Animation Platform) is renowned for its flexibility and smooth animation capabilities. By leveraging GSAP, Nika has brought the Onyx Fitness platform to life with captivating and eye-catching animations that enhance the overall user experience.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </ProjectSectionContent>
@@ -202,7 +201,6 @@ export const SmartSparrow = () => {
             </ProjectSectionColumns>
           </ProjectSection>
         </ThemeProvider>
-        <ProjectSectionHeading>Little about my experience in threeJS  </ProjectSectionHeading>
 
         <div className={styles.white}>
 

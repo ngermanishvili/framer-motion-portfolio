@@ -1,5 +1,6 @@
 .video {
-  width: 120%;
+  max-width: 800px;
+  width: 100%;
   margin-left: -20%;
 
   @media (--mediaLaptop) {
@@ -8,6 +9,7 @@
 
   @media (--mediaTablet) {
     width: 100%;
+    margin-left: 0%;
   }
 }
 
