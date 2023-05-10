@@ -145,7 +145,6 @@ export const ProjectSummary = ({
     </div>
   );
 
-  // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
   return (
     <Section
       className={styles.summary}
