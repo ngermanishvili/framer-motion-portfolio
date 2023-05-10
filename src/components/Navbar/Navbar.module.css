@@ -79,7 +79,7 @@
     position: absolute;
     right: var(--spaceS);
     left: var(--spaceS);
-    height: 4px;
+    height: 1px;
     background: rgb(var(--rgbAccent));
     transform: scaleX(0);
     transform-origin: right;
