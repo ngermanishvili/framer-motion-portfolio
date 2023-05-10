@@ -13,3 +13,6 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
+
+
+// if i want to change index.html tittle name i need to change it in public/index.html file but if it not index.html inside public folder then i need to change it in src/index.js file in title tag which is inside ReactDOM.render() method like this 
