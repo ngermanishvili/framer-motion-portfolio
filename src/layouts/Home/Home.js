@@ -94,7 +94,7 @@ export const Home = () => {
         title="Onyx Elite: Elevate Your Performance"
         description="Elevate your fitness performance to elite status with Onyx. Our exclusive training program is designed for athletes, fitness enthusiasts, and anyone seeking top-tier results. Unleash your competitive edge and rise to the pinnacle of your physical capabilities."
         buttonText="View project"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
