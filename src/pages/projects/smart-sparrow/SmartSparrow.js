@@ -22,9 +22,8 @@ import imageSprLessonBuilderDark from 'assets/onyx.jpg';
 import imageSprLessonBuilderLightLarge from 'assets/onyx.jpg';
 import imageSprLessonBuilderLightPlaceholder from 'assets/onyx.jpg';
 import imageSprLessonBuilderLight from 'assets/onyx.jpg';
-import videoSprMotionLarge from 'assets/onyx-video.mp4';
+// import videoSprMotionLarge from 'assets/onyx-video.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
-import videoSprMotion from 'assets/onyx-video.mp4';
 import imageSprSchema1DarkLarge from 'assets/spr-schema-1-dark-large.png';
 import imageSprSchema1DarkPlaceholder from 'assets/spr-schema-1-dark-placeholder.png';
 import imageSprSchema1Dark from 'assets/spr-schema-1-dark.png';
@@ -187,7 +186,7 @@ export const SmartSparrow = () => {
                   </ProjectSectionText>
                 </ProjectTextRow>
               </ProjectSectionContent>
-              <Image
+              {/* <Image
                 raised
                 className={styles.video}
                 srcSet={[
@@ -197,7 +196,7 @@ export const SmartSparrow = () => {
                 placeholder={videoSprMotionPlaceholder}
                 alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
                 sizes={`(max-width: ${media.mobile}px) 100vw, 50vw `}
-              />
+              /> */}  
             </ProjectSectionColumns>
           </ProjectSection>
         </ThemeProvider>
