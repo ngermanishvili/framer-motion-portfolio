@@ -3,7 +3,7 @@ import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg'
 import gamestackTexture2 from 'assets/gamestack-list.jpg';
 import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/summarizer.jpg';
+import gamestackTexture from 'assets/capture.png';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
@@ -69,7 +69,7 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
+        title="Front-End + Developer"
         description="Design portfolio of Nika Germanishvili — working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
@@ -84,8 +84,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Onyx Elite: Elevate Your Performance"
+        description="Elevate your fitness performance to elite status with Onyx. Our exclusive training program is designed for athletes, fitness enthusiasts, and anyone seeking top-tier results. Unleash your competitive edge and rise to the pinnacle of your physical capabilities."
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
@@ -99,6 +99,7 @@ export const Home = () => {
           ],
         }}
       />
+
       <ProjectSummary
         id="project-2"
         alternate
@@ -125,7 +126,32 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-5"
+        id="project-3"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={2}
+        title="Biomedical image collaboration"
+        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+
+        buttonText="View website"
+        buttonLink="https://gamestack.hamishw.com"
+        model={{
+          type: 'laptop',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [gamestackTexture, gamestackTexture],
+              placeholder: gamestackTexture,
+            },
+            {
+              srcSet: [gamestackTexture, gamestackTexture],
+              placeholder: gamestackTexture,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-2"
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
@@ -139,12 +165,12 @@ export const Home = () => {
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTexture],
-              placeholder: gamestackTexture,
+              srcSet: [gamestackTexture, gamestackTextureLarge],
+              placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [gamestackTexture, gamestackTexture],
-              placeholder: gamestackTexture,
+              srcSet: [gamestackTexture2, gamestackTexture2Large],
+              placeholder: gamestackTexture2Placeholder,
             },
           ],
         }}
