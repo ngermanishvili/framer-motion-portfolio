@@ -1,5 +1,6 @@
 .video {
   width: 120%;
+  margin-left: -20%;
 
   @media (--mediaLaptop) {
     width: 150%;
@@ -8,6 +9,12 @@
   @media (--mediaTablet) {
     width: 100%;
   }
+}
+
+.white{
+  width: 60%;
+  height: 5px;
+  background: red;
 }
 
 .sidebarImages {
