@@ -12,18 +12,20 @@ import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg'
 import sliceBackground from 'assets/slice-background.jpg';
 import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
 import sliceIrl from 'assets/slice-irl.jpg';
-import sliceSidebarAnnotationsLarge from 'assets/slice-sidebar-annotations-large.png';
 import sliceSidebarAnnotationsPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
-import sliceSidebarAnnotations from 'assets/slice-sidebar-annotations.png';
-import sliceSidebarLayersLarge from 'assets/slice-sidebar-layers-large.png';
-import sliceSidebarLayersPlaceholder from 'assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from 'assets/slice-sidebar-layers.png';
 import sliceSlidesLarge from 'assets/slice-slides-large.jpg';
 import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
 import sliceSlides from 'assets/slice-slides.jpg';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
+import ecommerce1 from 'assets/ecommerce.png';
+import ecommerceMob from 'assets/ecommerce-mob.png';
+import ecommerceMob2 from 'assets/ecommerce-mob2.png';
+import ecommerceBag from 'assets/ecommerce-3.png';
+import eccomerceStripe from 'assets/ecommerce-4.png';
+import payPage from 'assets/ecommerce-2.png';
+import Succesfull from 'assets/ecommerce-5.png';
 import {
   ProjectBackground,
   ProjectContainer,
@@ -44,7 +46,7 @@ const title = 'Biomedical image collaboration';
 const description =
   'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
 const roles = ['User Research', 'UX Design', 'Interface Design'];
- // asd
+// asd
 export const Slice = () => {
   return (
     <Fragment>
@@ -65,7 +67,7 @@ export const Slice = () => {
         <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
-              srcSet={[sliceApp, sliceAppLarge]}
+              srcSet={[ecommerce1, ecommerce1]}
               placeholder={sliceAppPlaceholder}
               alt="The Slice web application showing a selected user annotation."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
@@ -90,14 +92,14 @@ export const Slice = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={[sliceSidebarLayers, sliceSidebarLayersLarge]}
-                placeholder={sliceSidebarLayersPlaceholder}
+                srcSet={[ecommerceMob2, ecommerceMob2]}
+                placeholder={ecommerceMob2}
                 alt="The layers sidebar design, now with user profiles."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
               <Image
                 className={styles.sidebarImage}
-                srcSet={[sliceSidebarAnnotations, sliceSidebarAnnotationsLarge]}
+                srcSet={[ecommerceMob, ecommerceMob]}
                 placeholder={sliceSidebarAnnotationsPlaceholder}
                 alt="Multiple user annotations on a shared layer."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
@@ -107,19 +109,36 @@ export const Slice = () => {
         </ProjectSection>
         <ProjectSection light>
           <ProjectSectionContent>
-            <ProjectTextRow>
-              <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
-              <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
-              </ProjectSectionText>
-            </ProjectTextRow>
+
+            <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+            <ProjectSectionText>
+              A problem we heard about often form users was that it was difficult to
+              find images they had previously seen or worked on. To solve this we added
+              a new tab that lists all previously annotated slides. In addition, we
+              added the ability to favorite slides, so if users find an interesting
+              slide they want to annotate later, they can easily save it to their
+              account.
+            </ProjectSectionText>
+
             <Image
-              srcSet={[sliceSlides, sliceSlidesLarge]}
+              srcSet={[ecommerceBag]}
+              placeholder={sliceSlidesPlaceholder}
+              alt="The new My Slides tab in slice, showing annotated and favorited slides."
+              sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
+            />
+
+            <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+            <ProjectSectionText>
+              A problem we heard about often form users was that it was difficult to
+              find images they had previously seen or worked on. To solve this we added
+              a new tab that lists all previously annotated slides. In addition, we
+              added the ability to favorite slides, so if users find an interesting
+              slide they want to annotate later, they can easily save it to their
+              account.
+            </ProjectSectionText>
+
+            <Image
+              srcSet={[eccomerceStripe]}
               placeholder={sliceSlidesPlaceholder}
               alt="The new My Slides tab in slice, showing annotated and favorited slides."
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
@@ -140,7 +159,7 @@ export const Slice = () => {
               </div>
               <div className={styles.gridForeground}>
                 <Image
-                  srcSet={[sliceAnnotation, sliceAnnotationLarge]}
+                  srcSet={[payPage, payPage]}
                   placeholder={sliceAnnotationPlaceholder}
                   alt="An annotation preview popover with statistics for shape perimeter and area."
                   sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
@@ -172,7 +191,7 @@ export const Slice = () => {
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
-              src={sliceIrl}
+              src={Succesfull}
               placeholder={sliceIrlPlaceholder}
               alt="Students at the University of New South Wales using the new collaborative annotation features"
             />
