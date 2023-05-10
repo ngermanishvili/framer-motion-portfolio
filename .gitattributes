@@ -1,1 +1,2 @@
 large_file.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/onyx-video.mp4 filter=lfs diff=lfs merge=lfs -text
