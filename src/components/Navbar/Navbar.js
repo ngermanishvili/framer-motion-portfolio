@@ -12,7 +12,6 @@ import { NavToggle } from './NavToggle';
 import styles from './Navbar.module.css';
 import { ThemeToggle } from './ThemeToggle';
 import { navLinks, socialLinks } from './navData';
-import { DecoderText } from 'components/DecoderText';
 
 export const Navbar = () => {
   const [current, setCurrent] = useState();
