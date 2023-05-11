@@ -1,3 +1,4 @@
+
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
@@ -14,15 +15,18 @@ import { useFormInput } from 'hooks';
 import { useRef, useState } from 'react';
 import { cssProps, msToNum, numToMs } from 'utils/style';
 import styles from './Contact.module.css';
+import emailjs from 'emailjs-com';
 
 export const Contact = () => {
   const errorRef = useRef();
+  const name = useFormInput('');
   const email = useFormInput('');
   const message = useFormInput('');
   const [sending, setSending] = useState(false);
   const [complete, setComplete] = useState(false);
   const [statusError, setStatusError] = useState('');
   const initDelay = tokens.base.durationS;
+
 
   const onSubmit = async event => {
     event.preventDefault();
@@ -33,33 +37,24 @@ export const Contact = () => {
     try {
       setSending(true);
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: email.value,
+      await emailjs.send(
+        'service_yxvri0r',
+        'template_8cu4egw',
+        {
+          from_name: name.value,
+          to_name: 'Nika',
+          from_email: email.value,
+          to_email: 'nikagermanishvili5@gmail.com',
           message: message.value,
-        }),
-      });
-
-      const responseMessage = await response.json();
-
-      const statusError = getStatusError({
-        status: response?.status,
-        errorMessage: responseMessage?.error,
-        fallback: 'There was a problem sending your message',
-      });
-
-      if (statusError) throw new Error(statusError);
+        },
+        'v1wxDaDB9vjV9JpUf',
+      );
 
       setComplete(true);
       setSending(false);
     } catch (error) {
       setSending(false);
-      setStatusError(error.message);
+      setStatusError('There was a problem sending your message');
     }
   };
 
@@ -85,6 +80,17 @@ export const Contact = () => {
               className={styles.divider}
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay, 0.4)}
+            />
+            <Input
+              required
+              className={styles.input}
+              data-status={status}
+              style={getDelay(tokens.base.durationXS, initDelay)}
+              autoComplete="name"
+              label="Your Name"
+              type="text"
+              maxLength={512}
+              {...name}
             />
             <Input
               required
@@ -160,7 +166,8 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              I’ll get back to you within a couple days, sit tight
+              I'll be here, patiently waiting for your response. Take your time. <br />
+              მადლობა გამოხმაურებისათვის!, ვეცდები მალე გიპასუხოთ.
             </Text>
             <Button
               secondary
