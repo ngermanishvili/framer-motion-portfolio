@@ -166,7 +166,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              I'll be here, patiently waiting for your response. Take your time. <br />
+              I&apos;ll be here, patiently waiting for your response. Take your time. <br />
               მადლობა გამოხმაურებისათვის!, ვეცდები მალე გიპასუხოთ.
             </Text>
             <Button
@@ -188,24 +188,7 @@ export const Contact = () => {
   );
 };
 
-function getStatusError({
-  status,
-  errorMessage,
-  fallback = 'There was a problem with your request',
-}) {
-  if (status === 200) return false;
 
-  const statuses = {
-    500: 'There was a problem with the server, try again later',
-    404: 'There was a problem connecting to the server. Make sure you are connected to the internet',
-  };
-
-  if (errorMessage) {
-    return errorMessage;
-  }
-
-  return statuses[status] || fallback;
-}
 
 function getDelay(delayMs, offset = numToMs(0), multiplier = 1) {
   const numDelay = msToNum(delayMs) * multiplier;
