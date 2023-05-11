@@ -4,12 +4,7 @@ import imageSprBackgroundVolcanismLarge from 'assets/spr-background-volcanism-la
 import imageSprBackgroundVolcanismPlaceholder from 'assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from 'assets/spr-background-volcanism.jpg';
 import backgroundSpr from 'assets/spr-background.jpg';
-import imageSprComponentsDarkLarge from 'assets/spr-components-dark-large.png';
-import imageSprComponentsDarkPlaceholder from 'assets/spr-components-dark-placeholder.png';
-import imageSprComponentsDark from 'assets/spr-components-dark.png';
-import imageSprComponentsLightLarge from 'assets/spr-components-light-large.png';
-import imageSprComponentsLightPlaceholder from 'assets/spr-components-light-placeholder.png';
-import imageSprComponentsLight from 'assets/spr-components-light.png';
+
 import imageSprDesignSystemDarkLarge from 'assets/spr-design-system-dark-large.png';
 import imageSprDesignSystemDarkPlaceholder from 'assets/spr-design-system-dark-placeholder.png';
 import imageSprDesignSystemDark from 'assets/spr-design-system-dark.png';
@@ -22,26 +17,6 @@ import imageSprLessonBuilderDark from 'assets/onyx.jpg';
 import imageSprLessonBuilderLightLarge from 'assets/onyx.jpg';
 import imageSprLessonBuilderLightPlaceholder from 'assets/onyx.jpg';
 import imageSprLessonBuilderLight from 'assets/onyx.jpg';
-// import videoSprMotionLarge from 'assets/onyx-video.mp4';
-import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
-import imageSprSchema1DarkLarge from 'assets/spr-schema-1-dark-large.png';
-import imageSprSchema1DarkPlaceholder from 'assets/spr-schema-1-dark-placeholder.png';
-import imageSprSchema1Dark from 'assets/spr-schema-1-dark.png';
-import imageSprSchema1LightLarge from 'assets/spr-schema-1-light-large.png';
-import imageSprSchema1LightPlaceholder from 'assets/spr-schema-1-light-placeholder.png';
-import imageSprSchema1Light from 'assets/spr-schema-1-light.png';
-import imageSprSchema2DarkLarge from 'assets/spr-schema-2-dark-large.png';
-import imageSprSchema2DarkPlaceholder from 'assets/spr-schema-2-dark-placeholder.png';
-import imageSprSchema2Dark from 'assets/spr-schema-2-dark.png';
-import imageSprSchema2LightLarge from 'assets/spr-schema-2-light-large.png';
-import imageSprSchema2LightPlaceholder from 'assets/spr-schema-2-light-placeholder.png';
-import imageSprSchema2Light from 'assets/spr-schema-2-light.png';
-import imageSprStoryboarderDarkLarge from 'assets/spr-storyboarder-dark-large.png';
-import imageSprStoryboarderDarkPlaceholder from 'assets/spr-storyboarder-dark-placeholder.png';
-import imageSprStoryboarderDark from 'assets/spr-storyboarder-dark.png';
-import imageSprStoryboarderLightLarge from 'assets/spr-storyboarder-light-large.png';
-import imageSprStoryboarderLightPlaceholder from 'assets/spr-storyboarder-light-placeholder.png';
-import imageSprStoryboarderLight from 'assets/spr-storyboarder-light.png';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Link } from 'components/Link';
@@ -181,7 +156,7 @@ export const SmartSparrow = () => {
                 <ProjectTextRow width="s">
                   <ProjectSectionHeading>Nika Germanishvili</ProjectSectionHeading>
                   <ProjectSectionText>
-                    This cutting-edge project is built using JavaScript, a versatile and powerful programming language that enables dynamic and interactive features. Nika's expertise in JavaScript shines through in the seamless functionality and responsiveness of the platform, ensuring a user-friendly experience for members of Onyx Fitness.
+                    This cutting-edge project is built using JavaScript, a versatile and powerful programming language that enables dynamic and interactive features. Nika&apos;s expertise in JavaScript shines through in the seamless functionality and responsiveness of the platform, ensuring a user-friendly experience for members of Onyx Fitness.
                     Adding an extra layer of visual appeal, Nika has skillfully incorporated GSAP animations into the project. GSAP (GreenSock Animation Platform) is renowned for its flexibility and smooth animation capabilities. By leveraging GSAP, Nika has brought the Onyx Fitness platform to life with captivating and eye-catching animations that enhance the overall user experience.
                   </ProjectSectionText>
                 </ProjectTextRow>
@@ -196,7 +171,7 @@ export const SmartSparrow = () => {
                 placeholder={videoSprMotionPlaceholder}
                 alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
                 sizes={`(max-width: ${media.mobile}px) 100vw, 50vw `}
-              /> */}  
+              /> */}
             </ProjectSectionColumns>
           </ProjectSection>
         </ThemeProvider>
