@@ -14,6 +14,8 @@ import { Transition } from 'components/Transition';
 import { Fragment, useState } from 'react';
 import { media } from 'utils/style';
 import styles from './Profile.module.css';
+import profileImg1 from 'assets/aboutMe.jpg';
+
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
@@ -21,17 +23,24 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      Hey there, world! I'm Nika Germanishvili 22-year-old - Junior Front-End Developer. living life to the fullest in the vibrant Country Georgia, Tbilisi. Passionate, driven, and brimming with potential, I'm on a mission to make my mark in the world of web development.
+
+      I've certificate in front-end technologies from the esteemed Academy of Digital Industry. But that's just the beginning of my journey. I've taken it upon myself to dive headfirst into the vast ocean of knowledge, exploring the depths of React through platforms like Udemy.
+
+      Right now, I'm busy conquering the realm of three.js, unlocking the power to create mind-blowing 3D graphics on the web.  I've harnessed the mighty Next.js, an unstoppable framework that brings my web applications to life with server-side rendering, automatic code splitting, and seamless deployment. It's like magic, but with lines of code.
+
+
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      I'm a motivated, hardworking team player who thrives on challenges. I fearlessly embrace each hurdle that comes my way, turning them into stepping stones to success. There's no peak too high for me to conquer, no project too daunting for my unstoppable spirit.
     </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+
+      So, if you're ready to join forces and witness the extraordinary. I'm here to bring your web development dreams to life, one pixel at a time.
+
+      Contact Me - nikagermanishvili5@gmail.com
+    </Text>
+
   </Fragment>
 );
 
@@ -81,8 +90,8 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 <Image
                   reveal
                   delay={100}
-                  placeholder={profileImgPlaceholder}
-                  srcSet={[profileImg, profileImgLarge]}
+                  placeholder={profileImg1}
+                  srcSet={[profileImg1, profileImg1]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
                 />
