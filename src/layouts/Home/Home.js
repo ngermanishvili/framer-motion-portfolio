@@ -7,7 +7,7 @@ import gamestackTexture from 'assets/capture.png';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import summarizerDesk from 'assets/summarizer-desk.jpg';
 import summarizerMobile from 'assets/summarizer-portfolio-mobile.png';
-import ecommerceDesk from 'assets/ecommerce.png'
+import ecommerceDesk from 'assets/ecommerce.png';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
