@@ -1,8 +1,4 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
+
 import gamestackTexture from 'assets/capture.png';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import summarizerDesk from 'assets/summarizer-desk.jpg';
@@ -11,6 +7,8 @@ import ecommerceDesk from 'assets/ecommerce.png';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
+import unilabMobile from 'assets/unilab-todo.png';
+import unilabMobile2 from 'assets/test-unilab.png';
 import sprTexture from 'assets/onyx.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
@@ -19,6 +17,7 @@ import { Profile } from 'layouts/Home/Profile';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
+
 
 
 const disciplines = ['REACT.JS', 'NEXT.JS', 'JAVASCRIPT', 'NODE.JS', 'TAILWINDCSS', 'SASS', 'BOOTSTRAP', 'MATERIALUI', 'CHAKRAUI', 'MONGODB', 'FIREBASE'];
@@ -35,7 +34,7 @@ export const Home = () => {
   const projectSix = useRef();
   const projectSeven = useRef();
   const details = useRef();
-  
+
 
   useEffect(() => {
     const sections = [intro, projectOne, projectTwo, projectThree, details];
@@ -136,7 +135,7 @@ export const Home = () => {
         title="Onyx Elite: Elevate Your Performance"
         description="Elevate your fitness performance to elite status with Onyx. Our exclusive training program is designed for athletes, fitness enthusiasts, and anyone seeking top-tier results. Unleash your competitive edge and rise to the pinnacle of your physical capabilities."
         buttonText="View project"
-        buttonLink="/projects/slice"      
+        buttonLink="/projects/slice"
 
         model={{
           type: 'laptop',
@@ -205,21 +204,21 @@ export const Home = () => {
         sectionRef={projectSix}
         visible={visibleSections.includes(projectTwo.current)}
         index={6}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Todo App UNILAB (Mobile + Desktop)"
+        description="I built this App for unilab academy. It is a todo app that allows you to add, delete, and edit todos. with protected routes and authentication. Local storage is used to store the todos. What i Learn is working with protected routes and authentication from locally stored data. "
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="https://todo-unilab1337.netlify.app/"
         model={{
           type: 'phone',
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
+              srcSet: [unilabMobile],
+              placeholder: unilabMobile,
             },
             {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: [unilabMobile2],
+              placeholder: unilabMobile,
             },
           ],
         }}
