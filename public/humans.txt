@@ -1,25 +1,29 @@
-__  __  __
-\ \ \ \ \/
- \ \/\ \
-  \/  \/
+ _   _
+| \ | |
+|  \| |
+| . ` |   GERMANISHVILI NIKA
+| |\  |
+|_| \_|
+        
+
 
 The humans.txt file explains the team, technology,
 and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+Front-end Developer | デザイナー
 
-Hamish Williams
-Hand crafted design & web development
+Nika Germanishvili
+Junior Front-End Developer
 
 Design tools:
 Figma
 Photoshop
 Blender
 
-twitter.com/hamishmw
-github.com/hamishmw
+linkedin.com/ngermanishvili
+github.com/ngermanishvili
 
 _______________________________________________________________________________
 
