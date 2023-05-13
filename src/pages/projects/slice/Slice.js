@@ -35,10 +35,9 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
-const title = 'Biomedical image collaboration';
-const description =
-  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
-const roles = ['User Research', 'UX Design', 'Interface Design'];
+const title = 'Vetemens Ecommerce Website';
+const description = ' This project is a cutting-edge web application developed using Next.js, an acclaimed React framework known for its server-side rendering capabilities and automatic code splitting. By leveraging these features, our application delivers exceptional speed and efficiency, ensuring a seamless user experience. To efficiently manage and organize content, we have integrated Sanity Studio, a powerful and flexible CMS (Content Management System). With Sanity Studio, our team can easily collaborate in real-time, making content updates and modifications a breeze. Moreover, the CMS allows for effortless customization, enabling us to tailor the application to our specific needs.'
+const roles = ['Sanity  Backend', 'UX Design', 'Stripe', 'Next.js', 'React', 'Tailwind CSS', 'Vercel'];
 // asd
 export const Slice = () => {
   return (
@@ -59,6 +58,11 @@ export const Slice = () => {
         />
         <ProjectSection padding="top">
           <ProjectSectionContent>
+            <ProjectSectionHeading>About This Project</ProjectSectionHeading>
+            <ProjectSectionText>
+              The combination of Next.js and Sanity Studio empowers us to build a high-performance web application that not only delivers content swiftly but also offers a smooth and intuitive content management experience. We strive to provide our users with an exceptional platform that seamlessly integrates efficient content management with an engaging and responsive user interface.
+            </ProjectSectionText>
+
             <ProjectImage
               srcSet={[ecommerce1, ecommerce1]}
               placeholder={sliceAppPlaceholder}
@@ -72,10 +76,7 @@ export const Slice = () => {
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
               <ProjectSectionText>
-                Teachers needed a better way to create collaborative group activities by
-                annotating slides on Slice. Before starting this project, a layer could
-                only be annotated by a single user, making it difficult for learners to
-                work together.
+                In addition to being a robust and efficient web application, our project is also designed to be mobile-responsive friendly. We understand the importance of providing a seamless experience across various devices and screen sizes. By implementing responsive design principles and leveraging the capabilities of Next.js, our application adapts seamlessly to mobile devices, ensuring an optimal user experience regardless of the device being used.
               </ProjectSectionText>
               <ProjectSectionText>
                 Our solution was to allow users to be invited to a layer, where they can
@@ -103,14 +104,9 @@ export const Slice = () => {
         <ProjectSection light>
           <ProjectSectionContent>
 
-            <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+            <ProjectSectionHeading>Why Next.js, Sanity Studio, and Stripe</ProjectSectionHeading>
             <ProjectSectionText>
-              A problem we heard about often form users was that it was difficult to
-              find images they had previously seen or worked on. To solve this we added
-              a new tab that lists all previously annotated slides. In addition, we
-              added the ability to favorite slides, so if users find an interesting
-              slide they want to annotate later, they can easily save it to their
-              account.
+              Next.js, Sanity Studio, and Stripe are all powerful tools that make development faster, more efficient, and more secure. Next.js offers server-side rendering, which improves performance and SEO, and also provides automatic code splitting, which reduces load times. Meanwhile, Sanity Studio is a flexible and customizable CMS that makes it easy to manage content and collaborate in real-time. Stripe payment system offers easy-to-use APIs that allow developers to securely integrate payment functionality into their websites and applications.
             </ProjectSectionText>
 
             <Image
@@ -120,14 +116,9 @@ export const Slice = () => {
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
 
-            <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+            <ProjectSectionHeading>Stripe API Experience</ProjectSectionHeading>
             <ProjectSectionText>
-              A problem we heard about often form users was that it was difficult to
-              find images they had previously seen or worked on. To solve this we added
-              a new tab that lists all previously annotated slides. In addition, we
-              added the ability to favorite slides, so if users find an interesting
-              slide they want to annotate later, they can easily save it to their
-              account.
+              Furthermore, our project integrates Payment System APIs to provide a smooth and secure transaction experience for our users. Working with Payment System APIs has been a delightful experience, as they offer a reliable and comprehensive set of tools and functionalities. These APIs allow us to seamlessly handle payment processing, securely manage transactions, and provide a hassle-free payment experience for our users.
             </ProjectSectionText>
 
             <Image
@@ -162,11 +153,7 @@ export const Slice = () => {
             <div className={styles.gridText}>
               <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
               <ProjectSectionText>
-                Marking and annotating areas on high resolution biomedical images is the
-                core experience of the app, and it was easy to get lost or lose sense of
-                scale when zooming in on details. Adding measurements for the perimeter
-                and area of an annotation both helped to communicate the overall scale of
-                the image and how large the annotated feature is in comparison.
+                With a focus on speed, efficiency, and user experience, our e-commerce website is poised to revolutionize online shopping. Whether on desktop or mobile, customers can expect a seamless shopping journey with a wide range of products and secure payment options.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -174,14 +161,9 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
-              <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
-              </ProjectSectionText>
+              <ProjectSectionHeading>Thanks For Your Order !</ProjectSectionHeading>
+
+
             </ProjectTextRow>
             <Image
               src={Succesfull}
