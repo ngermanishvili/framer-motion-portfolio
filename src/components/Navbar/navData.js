@@ -8,10 +8,6 @@ export const navLinks = [
     pathname: '/#details',
   },
   {
-    label: 'ARTICLES',
-    pathname: '/articles',
-  },
-  {
     label: 'CONTACT',
     pathname: '/contact',
   },
@@ -19,18 +15,14 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'LinkedIn',
-    url: 'https://twitter.com/hamishMW',
-    icon: 'twitter',
+    label: 'linkedin',
+    url: 'https://www.linkedin.com/in/ngermanishvili/',
+    icon: 'linkedin',
   },
-  {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
-  },
+
   {
     label: 'Github',
-    url: 'https://github.com/HamishMW',
+    url: 'https://github.com/ngermanishvili',
     icon: 'github',
   },
 ];
