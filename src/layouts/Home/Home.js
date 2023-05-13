@@ -16,6 +16,7 @@ import { Intro } from 'layouts/Home/Intro';
 import { Profile } from 'layouts/Home/Profile';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
+import orderApp from 'assets/orderapp3.png';
 import styles from './Home.module.css';
 
 
@@ -228,16 +229,17 @@ export const Home = () => {
         sectionRef={projectSeven}
         visible={visibleSections.includes(projectThree.current)}
         index={7}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Food Recipe App (Mobile + Desktop)"
+        description="
+       My food order app generates a concise confirmation for each order, summarizing the selected items, quantities, and any customizations. Utilizing Firebase for its backend, the app benefits from real-time database capabilities, ensuring efficient storage and retrieval of order information. Instant updates and notifications are provided to both users and restaurants, facilitating a seamless order fulfillment process. With a streamlined ordering experience, users can enjoy a convenient way to place food orders, while restaurants efficiently manage and fulfill them."
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/food-recipe"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [sliceTexture, sliceTextureLarge],
+              srcSet: [orderApp],
               placeholder: sliceTexturePlaceholder,
             },
           ],
