@@ -15,3 +15,4 @@ export const Footer = ({ className }) => (
     </Text>
   </footer>
 );
+
