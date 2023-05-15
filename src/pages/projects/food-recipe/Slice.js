@@ -1,21 +1,17 @@
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
-
 import sliceBackgroundLarge from 'assets/orderapp3.png';
 import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
 import sliceBackground from 'assets/orderapp3.png';
-import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
 import sliceSidebarAnnotationsPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
 import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
-
 import orderAppMobile from 'assets/orderapp3-mobile.png';
 import orderAppMobile2 from 'assets/orderapp3-mob2.png';
-
 import deskOrder from 'assets/mobfriendl.png';
 import deskOrder2 from 'assets/mobfriendl2.png';
-import Succesfull from 'assets/ecommerce-5.png';
+
 import {
   ProjectBackground,
   ProjectContainer,
@@ -26,14 +22,13 @@ import {
   ProjectSectionContent,
   ProjectSectionHeading,
   ProjectSectionText,
-  ProjectTextRow,
 } from 'layouts/Project';
 import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
 const title = 'Food Order App';
-const description = 'Through my food order app project, I gained valuable experience in integrating Firebase as the backend, utilizing its real-time database, user authentication, and cloud storage features. Developing the responsive UI with React and CSS, I was able to create a seamless user experience. This project not only enhanced my web development skills but also provided me with a deep understanding of Firebase and its capabilities, setting me up for success in future projects.'
+const description = 'Through my food order app project, I gained valuable experience in integrating Firebase as the backend, utilizing its real-time database, user authentication, and cloud storage features. Developing the responsive UI with React and CSS, I was able to create a seamless user experience. This project not only enhanced my web development skills but also provided me with a deep understanding of Firebase and its capabilities, setting me up for success in future projects.';
 
 const roles = ['Firebase', 'CSS', 'React'];
 // asd
@@ -58,7 +53,7 @@ export const Slice = () => {
           <ProjectSectionContent>
             <ProjectSectionHeading>About This Project</ProjectSectionHeading>
             <ProjectSectionText>
-              Throughout the project, I had the opportunity to learn about Firebase's documentation, SDK integration, and API usage. I gained hands-on experience in setting up Firebase projects, managing collections and documents in the database, and handling user authentication flows. It was an enlightening journey that provided me with a solid foundation in using Firebase for future projects, and I look forward to exploring more of its capabilities.
+              Throughout the project, I had the opportunity to learn about Firebase&quot;s documentation, SDK integration, and API usage. I gained hands-on experience in setting up Firebase projects, managing collections and documents in the database, and handling user authentication flows. It was an enlightening journey that provided me with a solid foundation in using Firebase for future projects, and I look forward to exploring more of its capabilities.
             </ProjectSectionText>
 
             <ProjectImage
@@ -101,13 +96,11 @@ export const Slice = () => {
         </ProjectSection>
         <ProjectSection light>
           <ProjectSectionContent>
-
             <ProjectSectionHeading>Add Items to Cart</ProjectSectionHeading>
             <ProjectSectionText>
-              To implement this feature, I have created a user interface that displays various products along with their details and an "Add to Cart" button. When a user selects a product, the system automatically adds it to the cart without requiring any manual input from the user.
+              To implement this feature, I have created a user interface that displays various products along with their details and an &quot;Add to Cart&quot; button. When a user selects a product, the system automatically adds it to the cart without requiring any manual input from the user.
               Behind the scenes, I have implemented the necessary logic to handle the product selection and cart management. This includes updating the cart data, calculating the total price, and ensuring the cart remains synchronized across different pages or sessions
             </ProjectSectionText>
-
             <Image
               srcSet={[deskOrder]}
               placeholder={sliceSlidesPlaceholder}
@@ -117,7 +110,7 @@ export const Slice = () => {
 
             <ProjectSectionHeading>How Can i order?</ProjectSectionHeading>
             <ProjectSectionText>
-              Our food order app simplifies the process of satisfying your cravings. With just a few clicks, you can choose from a wide range of delicious options and have them conveniently delivered to your doorstep. Browse through our extensive menu, select your preferred items, and watch as they are automatically added to your cart. To complete your order, simply provide your name, street address, postal code, and city. Our team will ensure that your order is promptly processed and delivered with care. Enjoy a hassle-free and delightful food ordering experience with our app!"
+              Our food order app simplifies the process of satisfying your cravings. With just a few clicks, you can choose from a wide range of delicious options and have them conveniently delivered to your doorstep. Browse through our extensive menu, select your preferred items, and watch as they are automatically added to your cart. To complete your order, simply provide your name, street address, postal code, and city. Our team will ensure that your order is promptly processed and delivered with care. Enjoy a hassle-free and delightful food ordering experience with our app!
             </ProjectSectionText>
 
             <Image
