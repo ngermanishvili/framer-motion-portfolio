@@ -16,6 +16,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import orderApp from 'assets/orderapp3.png';
 import styles from './Home.module.css';
+import cryptoket from 'assets/cryptodeskmn.png';
 
 
 
@@ -32,6 +33,7 @@ export const Home = () => {
   const projectFive = useRef();
   const projectSix = useRef();
   const projectSeven = useRef();
+  const projectEight = useRef();
   const details = useRef();
 
 
@@ -239,6 +241,28 @@ export const Home = () => {
             {
               srcSet: [orderApp],
               placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+
+      <ProjectSummary
+        id="project-8"
+        sectionRef={projectEight}
+        visible={visibleSections.includes(projectThree.current)}
+        index={8}
+        title="Cryptoket NFT Marketplace (BETA)"
+        description="
+        CryptoKet is an innovative NFT marketplace powered by the Ethereum blockchain. With the seamless integration of MetaMask, users can securely buy, sell, and explore unique digital assets. Artists can confidently showcase their work while collectors verify the authenticity and ownership of NFTs. With a user-friendly interface and a vibrant community, CryptoKet offers a streamlined experience for creators and enthusiasts alike. Discover the world of non-fungible tokens with CryptoKet and unlock endless possibilities in just a few clicks."
+        buttonText="View project"
+        buttonLink="/projects/cryptoket"
+        model={{
+          type: 'laptop',
+          alt: 'Annotating a biomedical image in the Slice app',
+          textures: [
+            {
+              srcSet: [cryptoket],
+              placeholder: cryptoket,
             },
           ],
         }}
