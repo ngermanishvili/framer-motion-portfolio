@@ -4,13 +4,6 @@ import imageSprBackgroundVolcanismLarge from 'assets/spr-background-volcanism-la
 import imageSprBackgroundVolcanismPlaceholder from 'assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from 'assets/spr-background-volcanism.jpg';
 import backgroundSpr from 'assets/spr-background.jpg';
-
-import imageSprDesignSystemDarkLarge from 'assets/spr-design-system-dark-large.png';
-import imageSprDesignSystemDarkPlaceholder from 'assets/spr-design-system-dark-placeholder.png';
-import imageSprDesignSystemDark from 'assets/spr-design-system-dark.png';
-import imageSprDesignSystemLightLarge from 'assets/spr-design-system-light-large.png';
-import imageSprDesignSystemLightPlaceholder from 'assets/spr-design-system-light-placeholder.png';
-import imageSprDesignSystemLight from 'assets/spr-design-system-light.png';
 import imageSprLessonBuilderDarkLarge from 'assets/onyx.jpg';
 import imageSprLessonBuilderDarkPlaceholder from 'assets/onyx.jpg';
 import imageSprLessonBuilderDark from 'assets/onyx.jpg';
@@ -24,6 +17,9 @@ import { Meta } from 'components/Meta';
 import { SegmentedControl, SegmentedControlOption } from 'components/SegmentedControl';
 import { ThemeProvider, useTheme } from 'components/ThemeProvider';
 import { useAppContext } from 'hooks';
+import onyxTrainers from 'assets/onyx2.jpg';
+import validation from 'assets/onyx3.jpg';
+
 import {
   ProjectBackground,
   ProjectContainer,
@@ -79,7 +75,7 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
+          url="https://onyx-fitness.netlify.app/"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -112,30 +108,29 @@ export const SmartSparrow = () => {
         </SegmentedControl>
         <ProjectSection>
           <ProjectSectionContent>
-            <Image
-              raised
-              key={themeId}
-              srcSet={
-                isDark
-                  ? [imageSprDesignSystemDark, imageSprDesignSystemDarkLarge]
-                  : [imageSprDesignSystemLight, imageSprDesignSystemLightLarge]
-              }
-              placeholder={
-                isDark
-                  ? imageSprDesignSystemDarkPlaceholder
-                  : imageSprDesignSystemLightPlaceholder
-              }
-              alt="The homepage of the aero design system docs website linking to principles and components."
-              sizes="100vw"
-            />
             <ProjectTextRow>
-              <ProjectSectionHeading>Design system docs</ProjectSectionHeading>
-              <ProjectSectionText>
-                A design system is useless if no one knows how to use it, so we put
-                together a comprehensive documentation website to cover principles, ux,
-                accessibility, and component guidelines for designers and engineers
-                working with the system.
-              </ProjectSectionText>
+              <ProjectSectionHeading>VALIDATION W REGEX</ProjectSectionHeading>
+              <ProjectSectionHeading>
+                <ProjectSectionContent>
+                  <ProjectImage
+                    raised
+                    key={themeId}
+                    srcSet={
+                      isDark
+                        ? [validation, validation]
+                        : [validation, validation]
+                    }
+                    placeholder={
+                      isDark
+                        ? validation
+                        : validation
+                    }
+                    sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
+                    alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+                  />
+                </ProjectSectionContent>
+              </ProjectSectionHeading>
+
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
@@ -161,17 +156,22 @@ export const SmartSparrow = () => {
                   </ProjectSectionText>
                 </ProjectTextRow>
               </ProjectSectionContent>
-              {/* <Image
+              <ProjectImage
                 raised
-                className={styles.video}
-                srcSet={[
-                  { src: videoSprMotion, width: 1280 },
-                  { src: videoSprMotionLarge, width: 2560 },
-                ]}
-                placeholder={videoSprMotionPlaceholder}
-                alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
-                sizes={`(max-width: ${media.mobile}px) 100vw, 50vw `}
-              /> */}
+                key={themeId}
+                srcSet={
+                  isDark
+                    ? [onyxTrainers, onyxTrainers]
+                    : [onyxTrainers, onyxTrainers]
+                }
+                placeholder={
+                  isDark
+                    ? onyxTrainers
+                    : onyxTrainers
+                }
+                sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
+                alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              />
             </ProjectSectionColumns>
           </ProjectSection>
         </ThemeProvider>
