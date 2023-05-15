@@ -19,7 +19,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      As a passionate junior developer with one year of experience, my primary focus is professional growth and skill enhancement. Salary is not my main concern at this stage instead, I seek a supportive team that can help me expand my capabilities and collaborate on meaningful projects. I bring solid knowledge in HTML, CSS, JavaScript, React, and Next.js, MUI, ChakraUI, Firebase, along with exposure to technologies like Three.js, Styled Components, and Tailwind CSS. I am confident in my ability to deliver impactful results and thrive on challenges. Together, let's conquer new heights and bring your web development dreams to life, one pixel at a time.
+      As a passionate junior developer with one year of experience, my primary focus is professional growth and skill enhancement. Salary is not my main concern at this stage instead, I seek a supportive team that can help me expand my capabilities and collaborate on meaningful projects. I bring solid knowledge in HTML, CSS, JavaScript, React, and Next.js, MUI, ChakraUI, Firebase, along with exposure to technologies like Three.js, Styled Components, and Tailwind CSS. I am confident in my ability to deliver impactful results and thrive on challenges. Together, let&apos;s conquer new heights and bring your web development dreams to life, one pixel at a time.
     </Text>
   </Fragment>
 );
