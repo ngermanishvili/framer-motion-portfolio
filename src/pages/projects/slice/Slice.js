@@ -36,7 +36,8 @@ import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
 const title = 'Vetemens Ecommerce Website';
-const description = ' This project is a cutting-edge web application developed using Next.js, an acclaimed React framework known for its server-side rendering capabilities and automatic code splitting. By leveraging these features, our application delivers exceptional speed and efficiency, ensuring a seamless user experience. To efficiently manage and organize content, we have integrated Sanity Studio, a powerful and flexible CMS (Content Management System). With Sanity Studio, our team can easily collaborate in real-time, making content updates and modifications a breeze. Moreover, the CMS allows for effortless customization, enabling us to tailor the application to our specific needs.'
+const description = ' This project is a cutting-edge web application developed using Next.js, an acclaimed React framework known for its server-side rendering capabilities and automatic code splitting. By leveraging these features, our application delivers exceptional speed and efficiency, ensuring a seamless user experience. To efficiently manage and organize content, we have integrated Sanity Studio, a powerful and flexible CMS (Content Management System). With Sanity Studio, our team can easily collaborate in real-time, making content updates and modifications a breeze. Moreover, the CMS allows for effortless customization, enabling us to tailor the application to our specific needs.';
+
 const roles = ['Sanity  Backend', 'UX Design', 'Stripe', 'Next.js', 'React', 'Tailwind CSS', 'Vercel'];
 // asd
 export const Slice = () => {
