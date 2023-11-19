@@ -10,7 +10,7 @@ import { Transition } from 'components/Transition';
 import { Fragment, useState } from 'react';
 import { media } from 'utils/style';
 import styles from './Profile.module.css';
-import profileImg1 from 'assets/aboutMe.jpg';
+import profileImg1 from 'assets/ngermanishvili.jpeg';
 
 
 const ProfileText = ({ visible, titleId }) => (
@@ -19,7 +19,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      As a passionate junior developer with one year of experience, my primary focus is professional growth and skill enhancement. Salary is not my main concern at this stage instead, I seek a supportive team that can help me expand my capabilities and collaborate on meaningful projects. I bring solid knowledge in HTML, CSS, JavaScript, React, and Next.js, MUI, ChakraUI, Firebase, along with exposure to technologies like Three.js, Styled Components, and Tailwind CSS. I am confident in my ability to deliver impactful results and thrive on challenges. Together, let&apos;s conquer new heights and bring your web development dreams to life, one pixel at a time.
+      Hello, Im Nika Germanishvili Front-End Developer with 2+ yrs exp  React, Next.js, Typescript, React Native, Node.js, Express, MongoDB, ArangoDB, AWS.  Team player, Quick learner.  Contact me for your next project.
     </Text>
   </Fragment>
 );

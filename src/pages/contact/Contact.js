@@ -38,13 +38,13 @@ export const Contact = () => {
       setSending(true);
 
       await emailjs.send(
-        'service_yxvri0r',
+        'service_mpz6k5j',
         'template_8cu4egw',
         {
           from_name: name.value,
           to_name: 'Nika',
           from_email: email.value,
-          to_email: 'nikagermanishvili5@gmail.com',
+          to_email: 'nikagermanishvili8@gmail.com',
           message: message.value,
         },
         'v1wxDaDB9vjV9JpUf',
@@ -166,8 +166,11 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              I&apos;ll be here, patiently waiting for your response. Take your time. <br />
               მადლობა გამოხმაურებისათვის!, ვეცდები მალე გიპასუხოთ.
+              <br />
+              I&apos;ll be here, patiently waiting for your response. Take your time.
+              <br />
+              Я буду здесь и терпеливо жду вашего ответа. Не торопись.
             </Text>
             <Button
               secondary

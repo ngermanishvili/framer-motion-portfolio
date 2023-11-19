@@ -17,6 +17,19 @@ import { useEffect, useRef, useState } from 'react';
 import orderApp from 'assets/orderapp3.png';
 import styles from './Home.module.css';
 import cryptoket from 'assets/cryptodeskmn.png';
+import CryptoLegionDesktop from 'assets/cryptolegions-desktop.png'
+import CryptoLegionMobile from 'assets/cryptolegions-mobile.png'
+import RiveAiDesktop from 'assets/rivetai-desktop.png'
+import RiveAiMobile from 'assets/rivetai-mobile.png'
+import TenzityDesktop from 'assets/tenzity-desktop.png'
+import TenzityMobile from 'assets/tenzity-mobilke.png'
+import HrDesktop from 'assets/people-goal-desktop.png'
+import HrMobile from 'assets/people-goal-desktop.png'
+import GentoTrading from 'assets/gentotrading.png'
+
+
+
+
 
 
 
@@ -34,6 +47,12 @@ export const Home = () => {
   const projectSix = useRef();
   const projectSeven = useRef();
   const projectEight = useRef();
+  const projectNine = useRef();
+  const projectEleven = useRef();
+  const projectTen = useRef();
+
+
+
   const details = useRef();
 
 
@@ -93,7 +112,7 @@ export const Home = () => {
         index={1}
         title="Onyx Elite: Elevate Your Performance"
         description="Elevate your fitness performance to elite status with Onyx. Our exclusive training program is designed for athletes, fitness enthusiasts, and anyone seeking top-tier results. Unleash your competitive edge and rise to the pinnacle of your physical capabilities."
-        buttonText="View project"
+        // buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
@@ -127,6 +146,8 @@ export const Home = () => {
           ],
         }}
       />
+
+
 
       <ProjectSummary
         id="project-3"
@@ -201,54 +222,7 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-6"
-        alternate
         sectionRef={projectSix}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={6}
-        title="Todo App UNILAB (Mobile + Desktop)"
-        description="I built this App for unilab academy. It is a todo app that allows you to add, delete, and edit todos. with protected routes and authentication. Local storage is used to store the todos. What i Learn is working with protected routes and authentication from locally stored data. "
-        buttonText="View website"
-        buttonLink="https://todo-unilab1337.netlify.app/"
-        model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              srcSet: [unilabMobile],
-              placeholder: unilabMobile,
-            },
-            {
-              srcSet: [unilabMobile2],
-              placeholder: unilabMobile,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-7"
-        sectionRef={projectSeven}
-        visible={visibleSections.includes(projectThree.current)}
-        index={7}
-        title="Food Recipe App (Mobile + Desktop)"
-        description="
-       My food order app generates a concise confirmation for each order, summarizing the selected items, quantities, and any customizations. Utilizing Firebase for its backend, the app benefits from real-time database capabilities, ensuring efficient storage and retrieval of order information. Instant updates and notifications are provided to both users and restaurants, facilitating a seamless order fulfillment process. With a streamlined ordering experience, users can enjoy a convenient way to place food orders, while restaurants efficiently manage and fulfill them."
-        buttonText="View project"
-        buttonLink="/projects/food-recipe"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [orderApp],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-
-      <ProjectSummary
-        id="project-8"
-        sectionRef={projectEight}
         visible={visibleSections.includes(projectThree.current)}
         index={8}
         title="Cryptoket NFT Marketplace (BETA)"
@@ -267,6 +241,134 @@ export const Home = () => {
           ],
         }}
       />
+      <ProjectSummary
+        id="project-7"
+        sectionRef={projectSeven}
+        visible={visibleSections.includes(projectThree.current)}
+        index={5}
+        title="The AI Copilot for your Pre-Production Workflow"
+        description="An AI-powered workflow platform designed to help writers, producers, and directors streamline their script coverage, scheduling, and budgeting processes. With next generation tools provided by RivetAI, writers can finally focus on writing and producers can focus on pushing out great content... Next.js, Node.js"
+
+        buttonText="View website"
+        buttonLink="https://www.rivetai.com/"
+        model={{
+          type: 'laptop',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [RiveAiDesktop, RiveAiMobile],
+              placeholder: RiveAiDesktop,
+            },
+            {
+              srcSet: [RiveAiDesktop, RiveAiMobile],
+              placeholder: RiveAiDesktop,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-8"
+        sectionRef={projectEight}
+        visible={visibleSections.includes(projectThree.current)}
+        index={5}
+        title="Crypto Legions v2"
+        description="Crypto Legions v2 was the longest-lasting play-to-earn NFT game on the BSC network in 2022 with a lucrative ROI for players. Our game has 8 unique features that no other lucrative play-to-earn game on the BSC network has. React, Animation, GSAP, TainwindCSS"
+
+        buttonText="View website"
+        buttonLink="https://cryptolegions.app/"
+        model={{
+          type: 'laptop',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [CryptoLegionDesktop, CryptoLegionMobile],
+              placeholder: CryptoLegionDesktop,
+            },
+            {
+              srcSet: [CryptoLegionDesktop, CryptoLegionMobile],
+              placeholder: CryptoLegionDesktop,
+            },
+          ],
+        }}
+      />
+
+      <ProjectSummary
+        id="project-9"
+        sectionRef={projectNine}
+        visible={visibleSections.includes(projectThree.current)}
+        index={5}
+        title="Tenzity - A modern hoodie Website with using Next.js, Sanity.io, TailwindCSS, and more."
+        description=" Tenzit, a creation powered by Next.js and Sanity.io, delivers a smooth and visually captivating online journey. Designed with efficiency in mind, this website seamlessly merges cutting-edge technology with easy content management. Dive into the world of Tenzity.ge to explore a carefully curated selection of hoodies, all within a modern and user-friendly interface."
+
+        buttonText="View website"
+        buttonLink="https://tenzity.ge/"
+        model={{
+          type: 'laptop',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [TenzityDesktop, TenzityMobile],
+              placeholder: TenzityDesktop,
+            },
+            {
+              srcSet: [TenzityDesktop, TenzityMobile],
+              placeholder: TenzityDesktop,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-10"
+        sectionRef={projectTen}
+        visible={visibleSections.includes(projectThree.current)}
+        index={5}
+        title="PeopleGoal - HR Management Software"
+        description="Activate experiences that drive employee growth and business development. Connect all HR processes in a single platform that simplifies how work is done. Automate legacy HR processes and introduce workflow automation across the organization. Next.js, Lodash,Node.js, SmartsUpp."
+
+        buttonText="View website"
+        buttonLink="https://www.peoplegoal.com/"
+        model={{
+          type: 'laptop',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [HrDesktop, HrMobile],
+              placeholder: HrDesktop,
+            },
+            {
+              srcSet: [HrDesktop, HrMobile],
+              placeholder: HrDesktop,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-11"
+        sectionRef={projectEleven}
+        visible={visibleSections.includes(projectThree.current)}
+        index={5}
+        title="GentoTrading OilBank - Official Resseler of HyndaiXteer,Azmol, Aminol, Lukoil, etc."
+        description="The Giant Compant Based in georgia Official resseler of HyndaiXteer,Azmol, Aminol, Lukoil, etc. Website is On Deploying Process. React.js Node.js, MUI, TailwindCSS. "
+
+        buttonText="View website"
+        buttonLink="https://gentotrading.onrender.com/"
+        model={{
+          type: 'laptop',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [GentoTrading, GentoTrading],
+              placeholder: GentoTrading,
+            },
+            {
+              srcSet: [GentoTrading, GentoTrading],
+              placeholder: GentoTrading,
+            },
+          ],
+        }}
+      />
+
+
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
