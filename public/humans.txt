@@ -15,7 +15,7 @@ _______________________________________________________________________________
 Front-end Developer | デザイナー
 
 Nika Germanishvili
-Junior Front-End Developer
+ Front-End Developer
 
 Design tools:
 Figma

@@ -3,10 +3,7 @@ import gamestackTexture from 'assets/capture.png';
 import summarizerDesk from 'assets/summarizer-desk.jpg';
 import summarizerMobile from 'assets/summarizer-portfolio-mobile.png';
 import ecommerceDesk from 'assets/ecommerce.png';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import unilabMobile from 'assets/unilab-todo.png';
-import unilabMobile2 from 'assets/test-unilab.png';
 import sprTexture from 'assets/onyx.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
@@ -14,24 +11,18 @@ import { Intro } from 'layouts/Home/Intro';
 import { Profile } from 'layouts/Home/Profile';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
-import orderApp from 'assets/orderapp3.png';
 import styles from './Home.module.css';
 import cryptoket from 'assets/cryptodeskmn.png';
-import CryptoLegionDesktop from 'assets/cryptolegions-desktop.png'
-import CryptoLegionMobile from 'assets/cryptolegions-mobile.png'
-import RiveAiDesktop from 'assets/rivetai-desktop.png'
-import RiveAiMobile from 'assets/rivetai-mobile.png'
-import TenzityDesktop from 'assets/tenzity-desktop.png'
-import TenzityMobile from 'assets/tenzity-mobilke.png'
-import HrDesktop from 'assets/people-goal-desktop.png'
-import HrMobile from 'assets/people-goal-desktop.png'
-import GentoTrading from 'assets/gentotrading.png'
+import CryptoLegionDesktop from 'assets/crypto-legions.png';
+import RiveAiDesktop from 'assets/rivetai.png';
+import TenzityDesktop from 'assets/tenzity.png';
 
-
-
-
-
-
+import HrDesktop from 'assets/people-goal-desktop.png';
+import HrMobile from 'assets/people-goal-desktop.png';
+import GentoTrading from 'assets/gentotrading.png';
+import Zuri from 'assets/portfo-n1.png'
+import MusicRoom from 'assets/portf-n2.png'
+import Korea from 'assets/korea.png'
 
 const disciplines = ['REACT.JS', 'NEXT.JS', 'JAVASCRIPT', 'NODE.JS', 'TAILWINDCSS', 'SASS', 'BOOTSTRAP', 'MATERIALUI', 'CHAKRAUI', 'MONGODB', 'FIREBASE'];
 
@@ -50,6 +41,10 @@ export const Home = () => {
   const projectNine = useRef();
   const projectEleven = useRef();
   const projectTen = useRef();
+  const projectTwelve = useRef();
+  const projectTherteen = useRef();
+
+
 
 
 
@@ -154,18 +149,18 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectOne.current)}
         index={3}
-        title="Onyx Elite: Elevate Your Performance"
-        description="Elevate your fitness performance to elite status with Onyx. Our exclusive training program is designed for athletes, fitness enthusiasts, and anyone seeking top-tier results. Unleash your competitive edge and rise to the pinnacle of your physical capabilities."
-        buttonText="View project"
-        buttonLink="/projects/slice"
+        title="Artskoreanman - Shopify ecommerce Website"
+        description="Artskoreanman is a Shopify ecommerce website, which is selling Korean Artworks. I'm working on this project as a Front-End Developer. "
+        buttonText="Visit Website"
+        buttonLink="https://artskoreanman.com/"
 
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [ecommerceDesk, ecommerceDesk],
-              placeholder: ecommerceDesk,
+              srcSet: [Korea, Korea],
+              placeholder: Korea,
             },
           ],
         }}
@@ -204,7 +199,7 @@ export const Home = () => {
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
 
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="https://hoobank-flame.vercel.app/"
         model={{
           type: 'laptop',
           alt: 'App login screen',
@@ -256,11 +251,11 @@ export const Home = () => {
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [RiveAiDesktop, RiveAiMobile],
+              srcSet: [RiveAiDesktop, RiveAiDesktop],
               placeholder: RiveAiDesktop,
             },
             {
-              srcSet: [RiveAiDesktop, RiveAiMobile],
+              srcSet: [RiveAiDesktop, RiveAiDesktop],
               placeholder: RiveAiDesktop,
             },
           ],
@@ -281,11 +276,11 @@ export const Home = () => {
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [CryptoLegionDesktop, CryptoLegionMobile],
+              srcSet: [CryptoLegionDesktop, CryptoLegionDesktop],
               placeholder: CryptoLegionDesktop,
             },
             {
-              srcSet: [CryptoLegionDesktop, CryptoLegionMobile],
+              srcSet: [CryptoLegionDesktop, CryptoLegionDesktop],
               placeholder: CryptoLegionDesktop,
             },
           ],
@@ -307,11 +302,11 @@ export const Home = () => {
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [TenzityDesktop, TenzityMobile],
+              srcSet: [TenzityDesktop, TenzityDesktop],
               placeholder: TenzityDesktop,
             },
             {
-              srcSet: [TenzityDesktop, TenzityMobile],
+              srcSet: [TenzityDesktop, TenzityDesktop],
               placeholder: TenzityDesktop,
             },
           ],
@@ -367,6 +362,59 @@ export const Home = () => {
           ],
         }}
       />
+      <ProjectSummary
+        id="project-12"
+        sectionRef={projectTwelve}
+        visible={visibleSections.includes(projectThree.current)}
+        index={5}
+        title="ZURI PLASTIC SURGERY"
+        description="Featuring a stylish, well-appointed reception area, word-class private AAAASF-Certified surgical center, state-of-the-art patient exam rooms and Operating Rooms, and private patient parking located just off US-1, across from the renowned South Miami Hospital. "
+
+        buttonText="View website"
+        buttonLink="https://www.zuriplasticsurgery.com/"
+        model={{
+          type: 'laptop',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [Zuri, Zuri],
+              placeholder: Zuri,
+            },
+            {
+              srcSet: [Zuri, Zuri],
+              placeholder: Zuri,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-13"
+        sectionRef={projectTherteen}
+        visible={visibleSections.includes(projectThree.current)}
+        index={5}
+        title="Musicroom Georgia - Official audio equipment resseler in Georgia"
+        description="
+        Working on this website with my team but its not my stack it's Wordpress,  i'm working on this project as a Front-End Developer. 
+        "
+
+        buttonText="View website"
+        buttonLink="https://musicroom.ge/"
+        model={{
+          type: 'laptop',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [MusicRoom, MusicRoom],
+              placeholder: MusicRoom,
+            },
+            {
+              srcSet: [MusicRoom, MusicRoom],
+              placeholder: MusicRoom,
+            },
+          ],
+        }}
+      />
+
 
 
       <Profile

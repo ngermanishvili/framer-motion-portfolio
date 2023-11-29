@@ -19,6 +19,8 @@ import ecommerceBag from 'assets/ecommerce-3.png';
 import eccomerceStripe from 'assets/ecommerce-4.png';
 import payPage from 'assets/ecommerce-2.png';
 import Succesfull from 'assets/ecommerce-5.png';
+import Korea from 'assets/korea2.png'
+
 import {
   ProjectBackground,
   ProjectContainer,
@@ -54,7 +56,7 @@ export const Slice = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://ngermanishvilii.vercel.app/"
+          url="https://artskoreanman.com/"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -65,7 +67,7 @@ export const Slice = () => {
             </ProjectSectionText>
 
             <ProjectImage
-              srcSet={[ecommerce1, ecommerce1]}
+              srcSet={[, ecommerce1]}
               placeholder={sliceAppPlaceholder}
               alt="The Slice web application showing a selected user annotation."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
@@ -87,8 +89,8 @@ export const Slice = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={[ecommerceMob2, ecommerceMob2]}
-                placeholder={ecommerceMob2}
+                srcSet={[Korea, Korea]}
+                placeholder={Korea}
                 alt="The layers sidebar design, now with user profiles."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />

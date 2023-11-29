@@ -19,7 +19,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Hello, Im Nika Germanishvili Front-End Developer with 2+ yrs exp  React, Next.js, Typescript, React Native, Node.js, Express, MongoDB, ArangoDB, AWS.  Team player, Quick learner.  Contact me for your next project.
+      Hello, Im Nika Germanishvili Front-End Developer with 3+ yrs exp  React, Next.js, Typescript, React Native, Node.js, Express, MongoDB, ArangoDB, AWS.  Team player, Quick learner.  Contact me for your next project.
     </Text>
   </Fragment>
 );

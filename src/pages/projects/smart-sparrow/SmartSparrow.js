@@ -75,7 +75,7 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://onyx-fitness.netlify.app/"
+          url="https://onyx-fitss.netlify.app/"
           roles={roles}
         />
         <ProjectSection padding="top">
